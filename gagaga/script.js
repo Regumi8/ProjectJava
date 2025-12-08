@@ -28,9 +28,9 @@ let n = prompt("Введите степень")
 
 function pow(abc, bca) {
     if(!abc || !bca) 
-        return "Нужно ввести число отличное от нуля"
+        return "Нужно ввести число"
     if(isNaN(abc) || isNaN(bca)) 
-        return "Нужно ввести число отличное от нуля"
+        return "Нужно ввести число"
     return abc**bca
 }
 
