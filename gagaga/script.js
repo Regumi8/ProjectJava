@@ -9,19 +9,27 @@ const phrases = [
     "123",
 ];
 
-// const getRandomElement = (arr) => {
-//     const randomIndex = Math.floor(Math.random() * arr.length);
-//     console.log(arr[randomIndex]);
-//     return arr[randomIndex]
-// }
+const getRandomElement = (arr) => {
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    console.log(arr[randomIndex]);
+    return arr[randomIndex]
+}
 
-// let randomElement = getRandomElement(phrases)
+let randomElement = getRandomElement(phrases)
 
-let x = +prompt("Введите число")
-let n = +prompt("Введите степень")
+
+
+
+
+
+
+let x = prompt("Введите число")
+let n = prompt("Введите степень")
 
 function pow(abc, bca) {
     if(!abc || !bca) 
+        return "Нужно ввести число отличное от нуля"
+    if(isNaN(abc) || isNaN(bca)) 
         return "Нужно ввести число отличное от нуля"
     return abc**bca
 }
